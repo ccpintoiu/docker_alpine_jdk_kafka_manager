@@ -25,6 +25,6 @@ RUN cd /tmp && \
     
 RUN rm /opt/kafka-manager*.zip
 ENV           KAFKA_MANAGER_HOME /opt/kafka-manager
-ADD           ./image-files/start-kafka-manager.sh /usr/bin/
+ADD           ./start-kafka-manager.sh /usr/bin/
 EXPOSE 9000
 ENTRYPOINT     ["/usr/bin/start-kafka-manager.sh"]
